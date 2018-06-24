@@ -1,10 +1,18 @@
 import { Injectable } from '@angular/core'
-
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+//import { IEvent } from './event.model';
 
 @Injectable()
 export class EventService{
+  
+
     getEvents(){
-        return EVENTS
+        return EVENTS   
+    }
+
+    getEvent(id:number){
+      return EVENTS.find(event => event.id === id)
     }
 }
 
