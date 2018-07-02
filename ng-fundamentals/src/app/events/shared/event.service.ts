@@ -9,8 +9,8 @@ import { Observable } from 'rxjs';
 export class EventService{
   
 
-    getEvents(){
-      let subject = new Subject()
+    getEvents():Observable<IEVENT[]>{
+      let subject = new Subject<IEVENT[]>()
       setTimeout(() => {
         subject.next(EVENTS);
         subject.complete();
