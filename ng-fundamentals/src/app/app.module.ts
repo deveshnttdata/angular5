@@ -18,6 +18,7 @@ import { NavbarComponent } from './nav/navbar.component';
 import { ToastrService } from './common/toastr.service';
 import { appRoutes } from './routes';
 import { Error404Component } from './errors/404.component';
+import { AuthService } from './user/auth.service';
 //import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -40,7 +41,9 @@ import { Error404Component } from './errors/404.component';
     EventService,
     ToastrService,
     EventRouteActivator,
-    EventListResolver
+    EventListResolver,
+    AuthService
+
   ],
   bootstrap: [EventsAppComponent]
 })
