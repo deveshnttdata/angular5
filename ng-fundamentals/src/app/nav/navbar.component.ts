@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { ISession } from '../events/shared/event.model';
 import { AuthService } from '../user/auth.service'
 
@@ -14,12 +14,13 @@ import { AuthService } from '../user/auth.service'
 
 
 })
+
 export class NavbarComponent{
 
     searchTerm:string="";
     foundSessions: ISession[];
 
-    constructor(private auth:AuthService){
+    constructor(public auth:AuthService){
 
     }
     searchSessions(searchTerm){

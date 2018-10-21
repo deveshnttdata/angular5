@@ -1,0 +1,25 @@
+<br>
+<br>
+
+
+<div align="center" class="abc">
+
+    <h2  align="center"><br><br><br><br>
+           <b>Get your username</b><br><br>
+        </h2>
+        <br>
+        <div>
+        <form align="center">
+              <font size="4"> <b> Enter your email:</b><br></font>
+         <br> <input type="text" name="Email" size="35" [(ngModel)]="emailId"><br><br>
+                <br><input type="submit" class="button" value="Submit" (click)="onClick()">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="button1" [routerLink]="['/login']" routerLinkActive="active"><font size="3">Back</font></a>
+                </form>
+                <br>
+                <br>    
+                
+                
+        
+        <br><div><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4">{{username}}</font></b></div>
+        
+</div>
